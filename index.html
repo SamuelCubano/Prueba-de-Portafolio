@@ -14,24 +14,45 @@
   <div data-scroll-container class="scroll-container">
     <div class="topbar">
       <div class="left">
-        <h2>SamCub</h2>
-        <span>Frontend Developer</span>
+        <h2>Samuel Cubano</h2>
+        <span>UX/UI Designer & Frontend Developer</span>
       </div>
       <div class="center">
-        <img src="/img/unnamed.jpg" alt="Jesús Coello"/>
+        <img src="/img/unnamed.jpg" alt="SamuelCubano"/>
       </div>
       <div class="right">
         <a href="#">Descargar CV</a>
         <a href="#">Contacto</a>
         <button id="themeToggle" title="Tema"><i class="fas fa-moon"></i></button>
-        <button title="Menú"><i class="fas fa-bars"></i></button>
+        <button id="menuToggle" title="Menú"><i class="fas fa-bars"></i></button>
       </div>
+
+       <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar hidden">
+    <nav>
+       <!-- Botón de cerrar -->
+  <button id="closeSidebar" class="close-btn" title="Cerrar">
+    <i class="fas fa-times"></i>
+  </button>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Descargar CV</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+      <!-- Fondo oscurecido al abrir el menú -->
+      <div id="overlay" class="overlay hidden"></div>
     </div>
 
     <header class="hero" data-scroll-section>
       <div class="hero-content" data-aos="fade-up">
-        <h1>Diseño de calidad & sinergia en desarrollo web</h1>
-        <p>Diseñando con mentalidad de desarrollador, desarrollando con toque de diseñador 🧩</p>
+        <h1>Si no impacta, no sirve. Así de simple</h1>
+        <p>Entre líneas de código y tazas de café, nace la magia.</p>
         <div class="buttons">
           <a href="#proyectos" class="btn-primary">Ver mis proyectos</a>
           <a href="#" class="btn-secondary">Ver CV</a>
@@ -66,5 +87,6 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   <script src="/dark-light.js"></script>
+  <script src="/sidebar.js"></script>
 </body>
 </html>
