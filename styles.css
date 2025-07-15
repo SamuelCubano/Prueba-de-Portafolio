@@ -1,0 +1,203 @@
+    :root {
+      --bg: #0e0e0e;
+      --text: #ffffff;
+      --accent: #0f62fe;
+      --header-bg: rgba(10, 10, 10, 0.85);
+      --card-bg: #1e1e1e;
+      --tag-bg: #2a2a2a;
+      --tag-text: #ffffff;
+      --h1: #ffffff;
+    }
+
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --text: #111111;
+      --accent: #0f62fe;
+      --header-bg: rgba(255, 255, 255, 0.85);
+      --card-bg: #f2f2f2;
+      --tag-bg: #e0e0e0;
+      --tag-text: #111111;
+      --h1: #111111;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body::-webkit-scrollbar {
+      width: 8px;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: var(--accent);
+      border-radius: 4px;
+    }
+
+    .scroll-container {
+      overflow: hidden;
+    }
+
+    header.hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header.hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/mnt/data/88cb6747-eb76-4167-af63-78b4f9808a1a.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.05;
+    }
+
+    .hero-content {
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: var(--h1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-bottom: 2rem;
+    }
+
+    .hero-content .buttons a {
+      text-decoration: none;
+      margin: 0 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 40px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    .btn-secondary {
+      background-color: #2a2a2a;
+      color: white;
+      border: 1px solid #555;
+    }
+
+    .topbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      background: var(--header-bg);
+      backdrop-filter: blur(10px);
+      transition: background-color 0.5s;
+    }
+
+    .topbar .left h2 {
+      font-size: 1rem;
+    }
+
+    .topbar .center img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 130px;
+    }
+
+    .topbar .right a, .topbar .right button {
+      color: var(--text);
+      margin-left: 1rem;
+      text-decoration: none;
+      background: none;
+      border: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    section#proyectos {
+      min-height: 100vh;
+      background-color: var(--bg);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section#proyectos h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    section#stack {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section#stack h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .stack-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .stack-tags span {
+      background-color: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    

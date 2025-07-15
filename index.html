@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesús Coello | Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div data-scroll-container class="scroll-container">
+    <div class="topbar">
+      <div class="left">
+        <h2>SamCub</h2>
+        <span>Frontend Developer</span>
+      </div>
+      <div class="center">
+        <img src="/img/unnamed.jpg" alt="Jesús Coello"/>
+      </div>
+      <div class="right">
+        <a href="#">Descargar CV</a>
+        <a href="#">Contacto</a>
+        <button id="themeToggle" title="Tema"><i class="fas fa-moon"></i></button>
+        <button title="Menú"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <header class="hero" data-scroll-section>
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Diseño de calidad & sinergia en desarrollo web</h1>
+        <p>Diseñando con mentalidad de desarrollador, desarrollando con toque de diseñador 🧩</p>
+        <div class="buttons">
+          <a href="#proyectos" class="btn-primary">Ver mis proyectos</a>
+          <a href="#" class="btn-secondary">Ver CV</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="proyectos" data-scroll-section>
+      <h2 data-aos="fade-up">Mis Proyectos</h2>
+      <div class="project-grid">
+        <div class="project-card" data-aos="zoom-in">Proyecto 1</div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">Proyecto 2</div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">Proyecto 3</div>
+      </div>
+    </section>
+
+    <section id="stack" data-scroll-section>
+      <h2 data-aos="fade-up">Stack y herramientas</h2>
+      <div class="stack-tags" data-aos="fade-up" data-aos-delay="100">
+        <span>JavaScript</span>
+        <span>Astro</span>
+        <span>HTML/CSS</span>
+        <span>HubSpot</span>
+        <span>Zapier</span>
+        <span>IA para ventas</span>
+        <span>Figma</span>
+        <span>Notion</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script src="/dark-light.js"></script>
+</body>
+</html>
